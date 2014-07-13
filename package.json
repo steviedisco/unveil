@@ -1,0 +1,10 @@
+{
+  "name": "Unveil",
+  "version": "0.0.0",
+  "description": "Unveil",
+  "main": "server.js",
+  "author": {
+    "name": "Steven",
+    "email": ""
+  }
+}
