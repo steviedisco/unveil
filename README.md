@@ -1,8 +1,10 @@
 ﻿# Unveil
 
-Download and install Couchbase Enterprise Server. Setup server through browser.
+Clone repos
 
-Install couchbase to node : npm install couchbase
+Switch to develop branch
+
+Download and install Couchbase Enterprise Server. Setup server through browser.
 
 Install dependencies : npm install
 
