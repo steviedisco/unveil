@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="modules\facebook.js" />
     <Compile Include="routes\index.js" />
     <Content Include="bin\www" />
     <Content Include="Documentation\Unveil.doc" />
@@ -43,6 +44,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="Documentation\" />
+    <Folder Include="modules\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
