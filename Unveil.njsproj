@@ -32,7 +32,6 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\user.js" />
     <Content Include="bin\www" />
     <Content Include="Documentation\Unveil.doc" />
     <Content Include="package.json" />
