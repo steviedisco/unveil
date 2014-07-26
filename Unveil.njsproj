@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c85b7e34-e749-4009-99de-805410b1266f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,7 +30,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
+    <Compile Include="app\models\user.js" />
+    <Compile Include="app\routes.js" />
+    <Compile Include="config\database.js" />
+    <Compile Include="config\passport.js" />
+    <Compile Include="server.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\user.js" />
     <Content Include="bin\www" />
@@ -38,12 +42,17 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\error.hjs" />
-    <Content Include="views\index.hjs" />
+    <Content Include="views\profile.ejs" />
+    <Content Include="views\signup.ejs" />
+    <Content Include="views\login.ejs" />
+    <Content Include="views\index.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\models\" />
     <Folder Include="bin\" />
     <Folder Include="Documentation\" />
+    <Folder Include="config\" />
+    <Folder Include="app\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
