@@ -5,7 +5,6 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>Unveil</Name>
     <RootNamespace>Unveil</RootNamespace>
-    <LaunchUrl>http://unveil.local</LaunchUrl>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -13,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c85b7e34-e749-4009-99de-805410b1266f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +21,7 @@
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <ProjectView>ProjectFiles</ProjectView>
     <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>False</StartWebBrowser>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,21 +30,29 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
-    <Compile Include="config\facebook.js" />
+    <Compile Include="app\models\user.js" />
+    <Compile Include="app\routes.js" />
+    <Compile Include="config\database.js" />
+    <Compile Include="config\passport.js" />
+    <Compile Include="server.js" />
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\user.js" />
     <Content Include="bin\www" />
     <Content Include="Documentation\Unveil.doc" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\error.hjs" />
-    <Content Include="views\index.hjs" />
+    <Content Include="views\profile.ejs" />
+    <Content Include="views\signup.ejs" />
+    <Content Include="views\login.ejs" />
+    <Content Include="views\index.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\models\" />
     <Folder Include="bin\" />
     <Folder Include="Documentation\" />
     <Folder Include="config\" />
+    <Folder Include="app\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
