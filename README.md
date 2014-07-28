@@ -1,11 +1,11 @@
 ﻿# Unveil
 
-Clone repos
+Clone repository
 
-Switch to develop branch
+Switch to develop branch for working branch
 
 Download and install Couchbase Enterprise Server. Setup server through browser.
 
-Install dependencies : npm install
+Run install_dependencies.bat
 
-Load solution and run!
+Load solution into VS 2013 and hit play!
