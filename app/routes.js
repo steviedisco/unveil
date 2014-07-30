@@ -99,8 +99,8 @@ module.exports = function (app, passport) {
     // handle the callback after facebook has authorized the user
     app.get('/connect/facebook/callback',
 			passport.authorize('facebook', {
-        successRedirect : '/profile',
-        failureRedirect : '/'
+            successRedirect : '/profile',
+            failureRedirect : '/'
     }));
     
     // route middleware to make sure a user is logged in
