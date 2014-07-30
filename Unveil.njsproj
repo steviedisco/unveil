@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="app\models\user.js" />
     <Compile Include="app\routes.js" />
+    <Compile Include="config\auth.js" />
     <Compile Include="config\database.js" />
     <Compile Include="config\passport.js" />
     <Compile Include="server.js" />
@@ -41,6 +42,7 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\connect-local.ejs" />
     <Content Include="views\profile.ejs" />
     <Content Include="views\signup.ejs" />
     <Content Include="views\login.ejs" />
