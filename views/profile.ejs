@@ -2,9 +2,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>Node Authentication</title>
+    <title>Unveil</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <style>
         body {
             padding-top: 80px;
@@ -45,11 +46,12 @@
             <!-- FACEBOOK INFORMATION -->
             <div class="col-sm-6">
                 <div class="well">
-                    <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
-
+                    <img src="https://graph.facebook.com/<%= user.facebook.id %>/picture" class="profile-pic-small" />
+                    <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>                    
+                    
                     <!-- check if the user has this token (is the user authenticated with this social account) -->
                     <% if (user.facebook.token) { %>
-                    <p>
+                    <p>                        
                         <strong>id</strong>: <%= user.facebook.id %><br>
                         <strong>token</strong>: <%= user.facebook.token %><br>
                         <strong>email</strong>: <%= user.facebook.email %><br>
